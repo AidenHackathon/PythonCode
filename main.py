@@ -1,7 +1,8 @@
 import pandas as pd
 
-dataCVS = pd.read_csv("/Users/sula/Desktop/Testing.csv")
-print(dataCVS)
+dataCSV = pd.read_csv("/Users/sula/Desktop/Testing.csv")
+dataList = dataCSV.iloc[:, 'How are you feeling?']
+print(dataList)
 
 with open("/Users/sula/Documents/GitHub/PythonCode/reply.txt", mode='r') as f:
     fileTxt = f.readlines()
