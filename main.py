@@ -1,10 +1,13 @@
 import pandas as pd
 
-data = {'First Column Name':  ['First value', 'Second value',...],
-        'Second Column Name': ['First value', 'Second value',...],
+dataCVS = pd.read_csv("/Users/sula/Desktop/Testing.csv")
+print(dataCVS)
 
-        }
+with open("/Users/sula/Documents/GitHub/PythonCode/reply.txt", mode='r') as f:
+    fileTxt = f.readlines()
+    highSchool = fileTxt[0]
 
-df = pd.DataFrame (data, columns = ['First Column Name','Second Column Name',...])
+dice = {"1" : highSchool}
 
-print (df)
+str = dice.get("1")
+print(str)
