@@ -1,11 +1,16 @@
 import pandas as pd
+from csv import reader
 
-dataCSV = pd.read_csv("/Users/sula/Documents/GitHub/PythonCode/Testing.csv", index_col="Timestamp")
-dataPerson1 = dataCSV.loc["Person 1"]
-dataList = dataPerson1.to_list()
+with open("/Users/sula/Documents/GitHub/PythonCode/Testing.csv", mode='r') as readObject:
+    csv_Reader = reader(readObject)
 
-if(dataList[0] == "Frustrated"):
-    print("Fru")
+    for row in csv_Reader:
+        print(row[0])
+
+
+
+
+
 
 
 #with open("/Users/sula/Documents/GitHub/PythonCode/reply.txt", mode='r') as f:
