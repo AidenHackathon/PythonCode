@@ -1,6 +1,6 @@
 import pandas as pd
 
-dataCSV = pd.read_csv("/Users/sula/Desktop/Testing.csv")
+dataCSV = pd.read_csv("/Users/sula/Documents/GitHub/PythonCode/Testing.csv")
 dataList = dataCSV.iloc[:, 'How are you feeling?']
 print(dataList)
 
